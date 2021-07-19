@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube2</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel=" shortcut icon" href="img\youtube.ico" />
+    <link rel="icon" href="img\youtube.ico" />
+    <script
+      src="https://kit.fontawesome.com/c5d2569384.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="title">
+        <div id="titleleft">
+          <label for="toggleBtn" class="toggleBtn"></label>
+          <input
+            type="checkbox"
+            id="toggleBtn"
+            onclick="togle(this, 'sidebar2')"
+          />
+          <div id="logo">
+            <a href="main copy.html"><img src="img\logo.png" /></a>
+          </div>
+          <p>KR</p>
+        </div>
+
+        <div id="titlecenter">
+          <input type="text" placeholder="  검색" id="search" />
+          <input
+            type="button"
+            value="&#xf002;"
+            style="cursor: pointer"
+            id="enter"
+          />
+          <button id="mic">
+            <i class="fas fa-microphone"></i>
+            <p>음성으로 검색</p>
+          </button>
+        </div>
+
+        <div id="titleright">
+          <span id="video">
+            <button><i class="fas fa-video"></i></button>
+            <p>만들기</p>
+          </span>
+          <span id="grip">
+            <button><i class="fas fa-th"></i></button>
+            <p>앱</p>
+          </span>
+          <span id="bell">
+            <button><i class="fas fa-bell"></i></button>
+            <p>알림</p>
+          </span>
+          <span id="profile">
+            <button id="profile"></button>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <div id="sidebar2">
+      <div id="sidebar2Top">
+        <label for="toggleBtn" class="toggleBtn"></label>
+        <input
+          type="checkbox"
+          id="toggleBtn"
+          onclick="togle(this, 'sidebar2')"
+        />
+        <div id="logo">
+          <a href="main copy.html"><img src="img\logo.png" /></a>
+        </div>
+        <p>KR</p>
+      </div>
+      <ul class="list">
+        <li>
+          <i class="fas fa-home"></i>
+          <p>홈</p>
+        </li>
+        <li>
+          <i class="fas fa-compass"></i>
+          <p>탐색</p>
+        </li>
+        <li>
+          <i class="fas fa-users"></i>
+          <p>구독</p>
+        </li>
+        <li>
+          <i class="fab fa-youtube"></i>
+          <p>Originals</p>
+        </li>
+        <li>
+          <i class="fas fa-music"></i>
+          <p>YouTube Music</p>
+        </li>
+        <hr color="#e1e1e1" size="0.5" />
+        <li>
+          <i class="fas fa-inbox"></i>
+          <p>보관함</p>
+        </li>
+        <li>
+          <i class="fas fa-history"></i>
+          <p>시청기록</p>
+        </li>
+        <li>
+          <i class="fas fa-inbox"></i>
+          <p>내 동영상</p>
+        </li>
+        <li>
+          <i class="fas fa-film"></i>
+          <p>내 영화</p>
+        </li>
+        <li>
+          <i class="fas fa-photo-video"></i>
+          <p>나중에 볼 동영상</p>
+        </li>
+        <li>
+          <i class="fas fa-chevron-down"></i>
+          <p>더보기</p>
+        </li>
+      </ul>
+      <hr color="#cccccc" size="0.5" />
+    </div>
+    <section>
+      <div id="sidebar1">
+        <ul class="list">
+          <li>
+            <i class="fas fa-home"></i>
+            <div class="listText">홈</div>
+          </li>
+          <li>
+            <i class="fas fa-compass"></i>
+            <div class="listText">탐색</div>
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            <div class="listText">구독</div>
+          </li>
+          <li>
+            <i class="fab fa-youtube"></i>
+            <div class="listText">Originals</div>
+          </li>
+          <li>
+            <i class="fas fa-music"></i>
+            <div class="listText">Youtube Music</div>
+          </li>
+          <li>
+            <i class="fas fa-layer-group"></i>
+            <div class="listText">보관함</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="contents">
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\1.jpg" class="image" />
+                <div class="clock"> 
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\1.png" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">방구석에서 코딩만 하는 사람이 있다?</div>
+                <div class="nickname">효다몬</div>
+                <div class="views">10만 회 · 3개월 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\2.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\2.png" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">평행 주차 쉽게하는 꿀팁 대 방출</div>
+                <div class="nickname">퐁퐁부인</div>
+                <div class="views">5천 회 · 3주 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\3.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\3.jpg" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">텍사스에서 비키니시티로 온 썰</div>
+                <div class="nickname">다람이</div>
+                <div class="views">3만 회 · 1년 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\4.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\4.jpg" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">게살버거 100개 먹방 도전!</div>
+                <div class="nickname">뚱이</div>
+                <div class="views">75만 회 · 2주 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\5.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\5.jpg" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">비 - 깡 (클라리넷 Cover)</div>
+                <div class="nickname">징징이</div>
+                <div class="views">367 회 · 1개월 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\6.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\6.png" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">해파리 사냥 V-log (with 뚱이, 징징이)</div>
+                <div class="nickname">스폰지밥</div>
+                <div class="views">200만 회 · 6개월 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\7.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\7.jpg" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">즐거운 돈 모으기</div>
+                <div class="nickname">집게사장</div>
+                <div class="views">50만 회 · 1개월 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="top">
+              <div class="thumbnail">
+                <img src="contents\thumbnail\8.jpg" class="image" />
+                <div class="clock">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="laterVideo">
+                  <div id="laterVideotext">나중에 볼 동영상</div>
+                </div>
+                <div class="add">
+                  <i class="fas fa-stream"></i>
+                </div>
+                <div class="addList">
+                  <div id="addListtext">목록에 추가</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="userprofile">
+                <img src="contents\userprofile\8.jpg" alt="" class="image" />
+              </div>
+              <div class="substance">
+                <div class="title">내가 게살버거 비법을 훔친 이유</div>
+                <div class="nickname">플랑크톤</div>
+                <div class="views">3천 회 · 1주 전</div>
+              </div>
+              <div class="ellip">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function togle(obj, sidebar) {
+      var bar = document.getElementById(sidebar);
+      if (obj.checked) {
+        bar.style.left = "0px";
+        bar.style.boxShadow ="rgba(0, 0, 0, 0.5) 0 0 0 9999px";
+        bar.style.transition = "all 0.3s ease";
+      } else {
+        bar.style.left = "-240px";
+        bar.style.boxShadow ="rgba(0, 0, 0, 0) 0 0 0 9999px";
+        bar.style.transition = "all 0.3s ease";
+      }
+    }
+  </script>
+</html>
